@@ -1,0 +1,180 @@
+$price-tag__height: 27px;
+$price-tag__width-after: 10px;
+
+.product {
+    width: 0;
+    height: 0;
+    position: relative;
+
+    &__price-tag {
+        width: 108px;
+        display: flex;
+        align-items: center;
+        height: $price-tag__height;
+        border-radius: 8px 8px 8px 0;
+        background: #0498ae;
+        position: absolute;
+        top: -7px;
+        left: -$price-tag__width-after;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-left: $price-tag__width-after solid transparent;
+            border-top: 5px solid #b4f3fd;
+            left: 0px;
+            top: 27px;
+        }
+
+        &-price {
+            margin-left: $price-tag__width-after;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.product_shrimp {
+    width: 0;
+    height: 0;
+    position: relative;
+
+    &__price-tag {
+        width: 108px;
+        display: flex;
+        align-items: center;
+        height: $price-tag__height;
+        border-radius: 8px 8px 8px 0;
+        background: #8116c9;
+        position: absolute;
+        top: -7px;
+        left: -$price-tag__width-after;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-left: $price-tag__width-after solid transparent;
+            border-top: 5px solid #d7aff1;
+            left: 0px;
+            top: 27px;
+        }
+
+        &-price {
+            margin-left: $price-tag__width-after;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.product_booster {
+    width: 0;
+    height: 0;
+    position: relative;
+
+    &__price-tag {
+        width: 120px;
+        display: flex;
+        align-items: center;
+        height: $price-tag__height;
+        border-radius: 8px 8px 8px 0;
+        background: #965c1b;
+        position: absolute;
+        top: -7px;
+        left: -$price-tag__width-after;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-left: $price-tag__width-after solid transparent;
+            border-top: 5px solid #f3c694;
+            left: 0px;
+            top: 27px;
+        }
+
+        &-price {
+            margin-left: $price-tag__width-after;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.product_upcoming {
+    width: 0;
+    height: 0;
+    position: relative;
+    display: none;
+    @media screen and (max-width: 800px) {
+        display: flex;
+    }
+
+    &__price-tag {
+        width: 300px;
+        align-items: center;
+        height: 35px;
+        border-radius: 8px 8px 8px 0;
+        background: #0498ae;
+        position: absolute;
+        top: -15px;
+        left: -$price-tag__width-after;
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-left: $price-tag__width-after solid transparent;
+            border-top: 5px solid #b4f3fd;
+            left: 0px;
+            top: 35px;
+        }
+
+        &-price {
+            margin-left: $price-tag__width-after * 2;
+            color: #fff;
+            font-size: 25px;
+        }
+    }
+
+}
+
+.earntoken {
+    display: none;
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        height: 10px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__price-tag {
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15px;
+        border-radius: 0 16px 0 16px;
+        border: 1px solid #0498ae;
+        position: relative;
+        color: white;
+        font-size: 15px;
+        top: 0px;
+        right: 0px;
+
+        &-price {
+            margin-left: $price-tag__width-after;
+            color: #2db8ba;
+            font-size: 15px;
+            padding-right: 3px;
+        }
+    }
+
+}

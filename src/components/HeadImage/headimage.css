@@ -1,0 +1,61 @@
+.Card_text {
+    padding-top: 80px;
+    padding-left: 7%;
+}
+
+.TotalCard{
+    background-color: #61471C;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.Totalprice{
+    padding: 5px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.tvl{
+    padding: 5px 0;
+    font-size: 22px;
+    font-weight:700;
+}
+
+.accross {
+    padding: 5px 0;
+    font-size:18px;
+}
+
+.buyburn {
+    margin-top: 1%;
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .Card_text {
+        padding-top: 75px;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .buyburn {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .Card_text {
+        padding-top: 85px;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .buyburn {
+        display: none;
+    }
+}

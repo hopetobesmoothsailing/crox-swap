@@ -1,0 +1,11 @@
+.thead_invest {
+    background-color: #242542;
+    color: #FE7F70;
+    border-radius: 5px;
+}
+.thead_invest th {
+    padding: 10px 0;
+}
+.tbody_invest tr td {
+    padding: 7px 0;
+}
